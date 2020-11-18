@@ -22,3 +22,8 @@ dense graph.It iterates continously when new elements will not identified accord
 
 
 -----Problem Facing-------
+
+This algorithm is for solving all the pairs shortest path problem.
+on this the problem is to find the shortes distance between every pairs of vertices in a given egde waited directed graph.
+its a dynamic technique and some times it is implemented on simple graph.i think in this problem is to overcome by 
+a shortest distance between a pair not each pair.
