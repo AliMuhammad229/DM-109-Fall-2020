@@ -14,8 +14,4 @@ This Algorithm is best used when we are not directly identified whether it is tr
 
 
 -----Problem Facing-------
-
-This algorithm is for solving all the pairs shortest path problem.
-on this the problem is to find the shortes distance between every pairs of vertices in a given egde waited directed graph.
-its a dynamic technique and some times it is implemented on simple graph.i think in this problem is to overcome by 
-a shortest distance between a pair not each pair.
+This algorithm is for solving all the pair’s shortest path problem. On this the problem is to find the shortest distance between every pairs of vertices in a given edge waited directed graph. it’s a dynamic technique and sometimes it is implemented on simple graph. I think in this problem is to overcome by a shortest distance between a pair not each pair
