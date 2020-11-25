@@ -8,10 +8,12 @@ Floyd warshall algorithm is for finding the shortest parth between all the pairs
 
 
 ------Best Used-------
+
 This Algorithm is best used when we are not directly identified whether it is transitive or not. It is implemented on dense graph. It iterates continuously when new elements will not identified according to the given input.
 
 
 
 
 -----Problem Facing-------
-This algorithm is for solving all the pair’s shortest path problem. On this the problem is to find the shortest distance between every pairs of vertices in a given edge waited directed graph. it’s a dynamic technique and sometimes it is implemented on simple graph. I think in this problem is to overcome by a shortest distance between a pair not each pair
+
+This algorithm is for solving all the pair’s shortest path problem. On this the problem is to find the shortest distance between every pairs of vertices in a given edge waited directed graph. it’s a dynamic technique and sometimes it is implemented on simple graph. I think in this problem is to overcome by a shortest distance between a pair not each pair.
