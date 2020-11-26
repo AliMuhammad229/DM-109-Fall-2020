@@ -74,7 +74,7 @@ function FwAlgo() {
     divOutput.innerHTML = "<p>Transitive Closure of the Relation Is:</p>"
 
     document.getElementById('divOutput').innerHTML += generate_random_matrix_copy_without_commas;
-    console.log(time_start - time_end);
+    console.log(time_end - time_start);
 
 
     //Mention reference where you got the solution
