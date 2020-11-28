@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Floyd Warshall Algo</title>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script type="text/javascript" src="FWAlgo.js"></script>
+</head>
+
+<body style="font-size: 16pt;">
+    <h1>Warshall Algorithm</h1>
+    <h2>64413 - Ali Muhammad</h2>
+    <!--This is the group leader-->
+    <h3>64071 - Talha Ahmed</h3>
+    <!--This is the 2nd Member of the group-->
+    <h3>64271 - Ashar Khan</h3>
+    <!--This is the 3rd Member of the group-->
+    <h4><a href="https://github.com/AliMuhammad229/DM-109-Fall-2020/tree/main/Phase_1" target="blank">Repository of Project Phase 01</a></h4>
+    <h4><a href="https://github.com/AliMuhammad229/DM-109-Fall-2020/tree/main/Phase_Final" target="blank">Repository of Final Project</a></h4>
+    <h4><a href="https://dm-project-phase-01-f0a45.web.app/" target="_blank">Webpage of Phase 01</a></h4>
+    <!--Replace about:blank with your GitHub repository folder for assignment 1. -->
+    <p>
+        <button id="btnRun" onclick="runFwAlgo()">Run</button>
+    </p>
+    <p>
+
+        <input type="text" , id="txtInput" width="400" placeholder="Place N value as a N*N Matrix" height="200px">
+    </p>
+    <div id="divOutput" style="border: 2px solid green;padding: 10px 10px 10px 10px; height: 200px;">
+        Show your output here!
+
+    </div>
+    <br>
+    <br>
+    <canvas id="Graph" width="800" height="400"></canvas>
+    <script>
+        //Userinput Values
+        const userinput = [];
+        //for time taken by warshall algo we get:
+        const timetaken = [0.094, 0.114, 0.149, 0.185, 0.219, 0.314, 0.380, 0.455, 1.070, 1.640, 1.334, 0.860, 0.984, 1.145, 1.309, 1.505, 4.959, 4.914, 5.075, 5.024, 5.064];
+        GraphIt();
+
+        function GraphIt() {
+            const ctx = document.getElementById('Graph').getContext('2d');
+
+
+            for (var i = 4; i <= 100; i++) {
+                userinput.push(i);
+            }
+
+
+            const myGraph = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: userinput,
+                    datasets: [{
+                        label: 'Time Taken by Warshall Algorithm on N userinput',
+                        data: timetaken,
+                        fill: false,
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+
+
+                        borderColor: 'rgba(255, 99, 132, 1)',
+
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                // Include a dollar sign in the ticks
+                                callback: function(value, index, values) {
+                                    return value + 'ms';
+                                }
+                            }
+                        }]
+                    }
+                }
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
