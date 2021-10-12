@@ -3,5 +3,5 @@
 StdID | Name
 ------------ | -------------
 **64413** | **Ali Muhammad** 
-64071 | Talha Ahmed 
+**64071** | Talha Ahmed **
 64271 | Ashar Khan
